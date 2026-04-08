@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Dark Theme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            color: #e8e8e8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 40px;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            color: #ff9800;
+            text-align: center;
+            font-family: 'Cambria', 'Georgia', serif;
+            font-style: oblique;
+            font-weight: bold;
+            background: linear-gradient(135deg, rgba(42, 39, 10, 0.9) 0%, rgba(60, 50, 15, 0.8) 100%);
+            padding: 40px 60px;
+            border: 2px solid #ff9800;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(255, 152, 0, 0.2), 0 0 20px rgba(255, 152, 0, 0.1);
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            max-width: 90%;
+        }
+
+        h1:hover {
+            text-shadow: 0 0 10px rgba(255, 152, 0, 0.6);
+            box-shadow: 0 12px 40px rgba(255, 152, 0, 0.3), 0 0 30px rgba(255, 152, 0, 0.2);
+            transform: translateY(-5px);
+        }
+h2 {
+            color: #ff9800;
+            text-align: center;
+            font-family: 'Cambria', 'Georgia', serif;
+            font-style: oblique;
+            font-weight: bold;
+            background: linear-gradient(135deg, rgba(42, 39, 10, 0.9) 0%, rgba(60, 50, 15, 0.8) 100%);
+            padding: 40px 60px;
+            border: 2px solid #ff9800;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(255, 152, 0, 0.2), 0 0 20px rgba(255, 152, 0, 0.1);
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            max-width: 90%;}
+
+h2:hover {
+            text-shadow: 0 0 10px rgba(255, 152, 0, 0.6);
+            box-shadow: 0 12px 40px rgba(255, 152, 0, 0.3), 0 0 30px rgba(255, 152, 0, 0.2);
+            transform: translateY(-5px);}
+
+
+        a.link-btn {
+            color: #ff9800;
+            text-align: center;
+            font-family: 'Cambria', 'Georgia', serif;
+            font-style: oblique;
+            font-weight: bold;
+            text-decoration: none;
+            background: linear-gradient(135deg, rgba(42, 39, 10, 0.9) 0%, rgba(60, 50, 15, 0.8) 100%);
+            padding: 40px 60px;
+            border: 2px solid #ff9800;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(255, 152, 0, 0.2), 0 0 20px rgba(255, 152, 0, 0.1);
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            max-width: 90%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        a.link-btn:hover {
+            text-shadow: 0 0 10px rgba(255, 152, 0, 0.6);
+            box-shadow: 0 12px 40px rgba(255, 152, 0, 0.3), 0 0 30px rgba(255, 152, 0, 0.2);
+            transform: translateY(-5px);
+            text-decoration: underline;
+        }
+
+        hr {
+            width: 80%;
+            max-width: 600px;
+            margin: 40px auto;
+            height: 2px;
+            border: none;
+            background: linear-gradient(90deg, transparent 0%, #ff9800 50%, transparent 100%);
+            box-shadow: 0 0 15px rgba(255, 152, 0, 0.4);
+            border-radius: 1px;
+        }
+
+        .headings-container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 40px auto;
+        }
+
+        .headings-container h1,
+        .headings-container h2 {
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            padding: 20px 30px;
+            margin: 0;
+        }
+
+        .centered-heading {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 40px auto;
+        }
+
+        .centered-heading h1 {
+            max-width: 600px;
+        }
+
+        nav {
+            width: 100%;
+            background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
+            padding: 15px 40px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 20px rgba(255, 152, 0, 0.15);
+            border-bottom: 2px solid #ff9800;
+            z-index: 1000;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ff9800;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            padding: 8px 15px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #fff;
+            border: 1px solid #ff9800;
+            text-shadow: 0 0 8px rgba(255, 152, 0, 0.6);
+            box-shadow: 0 0 12px rgba(255, 152, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        nav a.active {
+            border: 2px solid #ff9800;
+            background: rgba(255, 152, 0, 0.1);
+            box-shadow: 0 0 15px rgba(255, 152, 0, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="ABOUT_PAGE.HTML">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="centered-heading">
+        <h1>FRONTEND DEVELOPERS</h1>
+    </div>
+    <div class="headings-container">
+        <h2>reasonable prices $</h2>
+        <h2>good theme choices</h2>
+    </div>
+    <hr>
+
+</body>
+</html>
