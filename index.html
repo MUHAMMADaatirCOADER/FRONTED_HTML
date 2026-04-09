@@ -185,6 +185,38 @@ h2:hover {
             background: rgba(255, 152, 0, 0.1);
             box-shadow: 0 0 15px rgba(255, 152, 0, 0.4);
         }
+        footer {
+            width: 100%;
+            background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
+            border-top: 2px solid #ff9800;
+            padding: 40px 20px;
+            margin-top: 60px;
+            text-align: center;
+            box-shadow: 0 -4px 20px rgba(255, 152, 0, 0.15);
+        }
+
+        footer p {
+            color: #ff9800;
+            font-size: 14px;
+            margin: 10px 0;
+            letter-spacing: 0.5px;
+        }
+
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        footer a:hover {
+            text-shadow: 0 0 8px rgba(255, 152, 0, 0.6);
+            text-decoration: underline;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 
@@ -212,6 +244,12 @@ h2:hover {
         <h2>We build modern, responsive websites with clean code, quick turnaround, and reliable support.</h2>
     </div>
     <hr>
-
+<footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Frontend Developers. All rights reserved.</p>
+            <p>Email: <a href="mailto:info@frontenddev.com">info@frontenddev.com</a> | Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Follow us on <a href="#">Twitter</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+        </div>
+    </footer>
 </body>
 </html>
